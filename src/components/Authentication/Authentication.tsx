@@ -24,7 +24,11 @@ const Authentication = () => {
             Quickly get started by signing in using your existing accounts.
           </p>
           {/****** GOOGLE_PROVIDER *******/}
-          <button onClick={() => signIn("google")} className={styles.auth_btn}>
+          <button
+            type="button"
+            onClick={() => signIn("google")}
+            className={styles.auth_btn}
+          >
             <Image
               src="/img/google-28.png"
               alt="google"
@@ -35,7 +39,7 @@ const Authentication = () => {
             <span className={styles.auth_btn_text}>Sign in with Google</span>
           </button>
           {/****** FACEBOOK_PROVIDER *******/}
-          <button className={styles.auth_btn}>
+          <button type="button" className={styles.auth_btn}>
             <Image
               src="/img/facebook-28.png"
               alt="facebook"
@@ -46,7 +50,7 @@ const Authentication = () => {
             <span className={styles.auth_btn_text}>Sign in with Facebook</span>
           </button>
           {/****** INSTAGRAM_PROVIDER *******/}
-          <button className={styles.auth_btn}>
+          <button type="button" className={styles.auth_btn}>
             <Image
               src="/img/instagram-28.png"
               alt="instagram"

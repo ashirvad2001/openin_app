@@ -1,9 +1,10 @@
-import { signOut, useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
+import Asidebar from "../components/Asidebar";
 
 const Dashboard = () => {
   // ...google user data
-  const { data: session, status } = useSession();
+  const { status } = useSession();
 
   // ...if user unauthenticated then send to homepage
   const router = useRouter();
@@ -12,8 +13,7 @@ const Dashboard = () => {
   }
   return (
     <div>
-      Dashboard
-      <button onClick={() => signOut()}>Logout</button>
+      <Asidebar />
     </div>
   );
 };

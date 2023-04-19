@@ -1,0 +1,90 @@
+.aside_wrapper {
+  width: 30%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.aside_container {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  width: 360px;
+  height: 90%;
+  border-radius: 30px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aside_container .aside_top {
+  display: flex;
+  flex: 1;
+  padding: 90px 0px 0px 60px;
+}
+
+.aside_top .aside_branding {
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.aside_container .aside_middle {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  padding-left: 60px;
+}
+
+.aside_middle .middle_flex {
+  display: flex;
+  align-items: center;
+  padding: 21px 0px;
+}
+
+.middle_flex .middle_img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  object-position: center;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.middle_flex .middle_text {
+  font-size: 1.1rem;
+  color: #eee;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.aside_container .aside_bottom {
+  /* background-color: lightblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+  padding: 0px 60px;
+}
+
+.aside_bottom .bottom_text {
+  color: #eee;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.aside_bottom .bottom_logout_btn {
+  border: none;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #eee;
+  text-align: left;
+  outline: none;
+  cursor: pointer;
+}
