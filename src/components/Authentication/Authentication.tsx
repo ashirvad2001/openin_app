@@ -1,7 +1,17 @@
 import styles from "../../styles/Authentication.module.css";
 import Image from "next/image";
+import { signIn, useSession } from "next-auth/react";
+import { useRouter } from "next/router";
 
 const Authentication = () => {
+  // ...google user data
+  const { status } = useSession();
+
+  // ...if user authenticated then send to dashboard page
+  const router = useRouter();
+  if (status === "authenticated") {
+    router.push("/dashboard");
+  }
   return (
     <div className={styles.auth_wrapper}>
       <div className={styles.auth_container_01}>
@@ -14,7 +24,7 @@ const Authentication = () => {
             Quickly get started by signing in using your existing accounts.
           </p>
           {/****** GOOGLE_PROVIDER *******/}
-          <button className={styles.auth_btn}>
+          <button onClick={() => signIn("google")} className={styles.auth_btn}>
             <Image
               src="/img/google-28.png"
               alt="google"
