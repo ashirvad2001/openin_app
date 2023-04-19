@@ -1,0 +1,96 @@
+.auth_wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth_wrapper .auth_container_01 {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth_container_01 .auth_branding {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.auth_wrapper .auth_container_02 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.auth_container_02 .auth_providers {
+  width: 700px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 150px;
+}
+
+.auth_providers .auth_heading {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.auth_providers .auth_lead {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #9e98b2;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.auth_providers .auth_btn {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 6px;
+  padding: 21px;
+  margin: 12px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.auth_btn .auth_btn_img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  object-position: center;
+  margin-right: 13.33px;
+}
+
+.auth_btn .auth_btn_text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.auth_policy {
+  margin-top: 20px;
+  color: #9e98b2;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
